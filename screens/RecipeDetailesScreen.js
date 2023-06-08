@@ -15,7 +15,10 @@ const RecipeDetailsScreen = ({ route }) => {
       .then((response) => {
         console.log(response.data.ingredients);
         setIngredients(response.data.ingredients);
+      }).catch((error) => {
+        console.log(error);
       });
+      
   }, []);
 
   return (
