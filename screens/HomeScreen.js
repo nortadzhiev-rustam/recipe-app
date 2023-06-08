@@ -36,6 +36,9 @@ const HomepageScreen = ({ navigation }) => {
       .then((response) => {
         console.log(response.data.recipes);
         setFeedList(response.data.recipes);
+      })
+      .catch((error) => {
+        console.log(error);
       });
   }, []);
 

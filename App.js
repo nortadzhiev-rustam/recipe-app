@@ -44,17 +44,7 @@ const App = () => {
   };
 
   
-  const renderCategoryChip = ({ item }) => {
-    return (
-      <Chip
-        key={item.id}
-        style={selectedCategory === item ? styles.selectedChip : styles.chip}
-        onPress={() => handleCategorySelection(item)}
-      >
-        {item.title}
-      </Chip>
-    );
-  };
+  
 
   return (
     <SafeAreaProvider>
